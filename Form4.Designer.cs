@@ -732,7 +732,6 @@
             comboBox25.Font = new Font("Segoe UI", 14F);
             comboBox25.ForeColor = Color.Black;
             comboBox25.FormattingEnabled = true;
-            comboBox25.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
             comboBox25.Location = new Point(74, 579);
             comboBox25.Name = "comboBox25";
             comboBox25.Size = new Size(179, 39);
@@ -1110,7 +1109,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(134, 32);
             textBox1.TabIndex = 35;
-            textBox1.Text = "          4-6";
             // 
             // label23
             // 
@@ -1297,7 +1295,6 @@
             comboBox17.Font = new Font("Segoe UI", 12F);
             comboBox17.ForeColor = Color.Black;
             comboBox17.FormattingEnabled = true;
-            comboBox17.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
             comboBox17.Location = new Point(74, 63);
             comboBox17.Name = "comboBox17";
             comboBox17.Size = new Size(179, 36);
