@@ -465,7 +465,6 @@ namespace Without_Coach
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(134, 32);
             textBox1.TabIndex = 35;
-            textBox1.Text = "          4-6    ";
             // 
             // label23
             // 
