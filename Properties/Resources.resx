@@ -127,8 +127,11 @@
   <data name="tables 3 days1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tables 3 days1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ylkxncce1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ylkxncce1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tables 3 days" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tables 3 days.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="the_original_photo_of_without-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\the_original_photo_of_without-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,11 +139,11 @@
   <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Black-Square-Shape-PNG-HD-Image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Black-Square-Shape-PNG-HD-Image1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ylkxncce" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ylkxncce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Account" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +157,8 @@
   <data name="tables 3 days3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tables 3 days3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tables 3 days" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tables 3 days.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ylkxncce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ylkxncce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="without2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\without2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,7 +172,7 @@
   <data name="tabels 6 days after" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tabels 6 days after.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ylkxncce1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ylkxncce1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Legs-Push-Pull+Training" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Legs-Push-Pull+Training.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

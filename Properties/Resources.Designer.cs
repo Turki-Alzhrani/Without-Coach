@@ -10,8 +10,9 @@
 
 namespace Without_Coach.Properties {
     using System;
-    
-    
+    using System.Drawing;
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -31,7 +32,10 @@ namespace Without_Coach.Properties {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-        
+
+        public static Image Image1 { get; internal set; }
+        public static Image Legs_Push_Pull_Training { get; internal set; }
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>

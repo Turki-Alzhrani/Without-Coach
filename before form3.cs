@@ -26,12 +26,12 @@ namespace Without_Coach
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("error");
+            MessageBox.Show("Please select another item", "Erorr", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("error");
+            MessageBox.Show("Please select another item", "Erorr", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

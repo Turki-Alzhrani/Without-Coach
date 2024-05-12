@@ -26,12 +26,17 @@ namespace Without_Coach
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("err0r");
+            MessageBox.Show("Please select another item", "Erorr", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("errpr");
+            MessageBox.Show("Please select another item", "Erorr", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void before_form4_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

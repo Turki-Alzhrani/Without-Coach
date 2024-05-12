@@ -38,6 +38,7 @@ namespace Without_Coach
             pictureBox2 = new PictureBox();
             panel2 = new Panel();
             panel3 = new Panel();
+            linkLabel1 = new LinkLabel();
             textBox13 = new TextBox();
             textBox14 = new TextBox();
             textBox15 = new TextBox();
@@ -184,6 +185,7 @@ namespace Without_Coach
             // 
             panel3.BackColor = Color.LightGray;
             panel3.BackgroundImageLayout = ImageLayout.Stretch;
+            panel3.Controls.Add(linkLabel1);
             panel3.Controls.Add(textBox13);
             panel3.Controls.Add(textBox14);
             panel3.Controls.Add(textBox15);
@@ -234,10 +236,25 @@ namespace Without_Coach
             panel3.Controls.Add(comboBox14);
             panel3.Controls.Add(pictureBox3);
             panel3.Dock = DockStyle.Fill;
+            panel3.Font = new Font("Rockwell Condensed", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
+            panel3.RightToLeft = RightToLeft.No;
             panel3.Size = new Size(950, 738);
             panel3.TabIndex = 17;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Cursor = Cursors.Hand;
+            linkLabel1.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel1.Location = new Point(724, 72);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(17, 24);
+            linkLabel1.TabIndex = 59;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "?";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // textBox13
             // 
@@ -355,7 +372,6 @@ namespace Without_Coach
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(134, 32);
             textBox12.TabIndex = 46;
-            textBox12.Text = "          8-10";
             // 
             // textBox11
             // 
@@ -365,7 +381,6 @@ namespace Without_Coach
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(134, 32);
             textBox11.TabIndex = 45;
-            textBox11.Text = "          4-6";
             // 
             // textBox10
             // 
@@ -375,7 +390,6 @@ namespace Without_Coach
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(134, 32);
             textBox10.TabIndex = 44;
-            textBox10.Text = "          4-6";
             // 
             // textBox9
             // 
@@ -385,7 +399,7 @@ namespace Without_Coach
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(134, 32);
             textBox9.TabIndex = 43;
-            textBox9.Text = "          4-6";
+            textBox9.TextChanged += textBox9_TextChanged;
             // 
             // textBox8
             // 
@@ -395,7 +409,6 @@ namespace Without_Coach
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(134, 32);
             textBox8.TabIndex = 42;
-            textBox8.Text = "          8-10";
             // 
             // textBox7
             // 
@@ -405,7 +418,6 @@ namespace Without_Coach
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(134, 32);
             textBox7.TabIndex = 41;
-            textBox7.Text = "          4-6";
             // 
             // textBox6
             // 
@@ -415,7 +427,6 @@ namespace Without_Coach
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(134, 32);
             textBox6.TabIndex = 40;
-            textBox6.Text = "          4-6";
             // 
             // textBox5
             // 
@@ -425,7 +436,6 @@ namespace Without_Coach
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(134, 32);
             textBox5.TabIndex = 39;
-            textBox5.Text = "          4-6";
             // 
             // textBox4
             // 
@@ -435,7 +445,6 @@ namespace Without_Coach
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(134, 32);
             textBox4.TabIndex = 38;
-            textBox4.Text = "         8-10";
             // 
             // textBox3
             // 
@@ -445,7 +454,6 @@ namespace Without_Coach
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(134, 32);
             textBox3.TabIndex = 37;
-            textBox3.Text = "          4-6";
             // 
             // textBox2
             // 
@@ -455,7 +463,6 @@ namespace Without_Coach
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(134, 32);
             textBox2.TabIndex = 36;
-            textBox2.Text = "          4-6";
             // 
             // textBox1
             // 
@@ -617,13 +624,13 @@ namespace Without_Coach
             comboBox15.BackColor = Color.LightGray;
             comboBox15.Cursor = Cursors.Hand;
             comboBox15.FlatStyle = FlatStyle.System;
-            comboBox15.Font = new Font("Segoe UI", 14F);
+            comboBox15.Font = new Font("Rockwell Condensed", 12F);
             comboBox15.ForeColor = Color.Black;
             comboBox15.FormattingEnabled = true;
-            comboBox15.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox15.Items.AddRange(new object[] { "Standing Military Press" });
             comboBox15.Location = new Point(74, 135);
             comboBox15.Name = "comboBox15";
-            comboBox15.Size = new Size(179, 39);
+            comboBox15.Size = new Size(179, 32);
             comboBox15.TabIndex = 22;
             comboBox15.Text = "Standing Military Press";
             // 
@@ -632,13 +639,13 @@ namespace Without_Coach
             comboBox16.BackColor = Color.LightGray;
             comboBox16.Cursor = Cursors.Hand;
             comboBox16.FlatStyle = FlatStyle.System;
-            comboBox16.Font = new Font("Segoe UI", 12F);
+            comboBox16.Font = new Font("Rockwell Condensed", 12F);
             comboBox16.ForeColor = Color.Black;
             comboBox16.FormattingEnabled = true;
-            comboBox16.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox16.Items.AddRange(new object[] { "Close-Grip Bench Press" });
             comboBox16.Location = new Point(74, 99);
             comboBox16.Name = "comboBox16";
-            comboBox16.Size = new Size(179, 36);
+            comboBox16.Size = new Size(179, 32);
             comboBox16.TabIndex = 21;
             comboBox16.Text = "Close-Grip Bench Press";
             // 
@@ -647,28 +654,29 @@ namespace Without_Coach
             comboBox17.BackColor = Color.LightGray;
             comboBox17.Cursor = Cursors.Hand;
             comboBox17.FlatStyle = FlatStyle.System;
-            comboBox17.Font = new Font("Segoe UI", 12F);
+            comboBox17.Font = new Font("Rockwell Condensed", 12F);
             comboBox17.ForeColor = Color.Black;
             comboBox17.FormattingEnabled = true;
-            comboBox17.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox17.Items.AddRange(new object[] { "Barbell Bench Press", "Test" });
             comboBox17.Location = new Point(74, 63);
             comboBox17.Name = "comboBox17";
-            comboBox17.Size = new Size(179, 36);
+            comboBox17.Size = new Size(179, 32);
             comboBox17.TabIndex = 20;
             comboBox17.Text = "Barbell Bench Press";
+            comboBox17.SelectedIndexChanged += comboBox17_SelectedIndexChanged;
             // 
             // comboBox18
             // 
             comboBox18.BackColor = Color.LightGray;
             comboBox18.Cursor = Cursors.Hand;
             comboBox18.FlatStyle = FlatStyle.System;
-            comboBox18.Font = new Font("Segoe UI", 14F);
+            comboBox18.Font = new Font("Rockwell Condensed", 12F);
             comboBox18.ForeColor = Color.Black;
             comboBox18.FormattingEnabled = true;
-            comboBox18.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox18.Items.AddRange(new object[] { "Barbell Row" });
             comboBox18.Location = new Point(74, 246);
             comboBox18.Name = "comboBox18";
-            comboBox18.Size = new Size(179, 39);
+            comboBox18.Size = new Size(179, 32);
             comboBox18.TabIndex = 19;
             comboBox18.Text = "Barbell Row";
             // 
@@ -677,13 +685,13 @@ namespace Without_Coach
             comboBox19.BackColor = Color.LightGray;
             comboBox19.Cursor = Cursors.Hand;
             comboBox19.FlatStyle = FlatStyle.System;
-            comboBox19.Font = new Font("Segoe UI", 12F);
+            comboBox19.Font = new Font("Rockwell Condensed", 12F);
             comboBox19.ForeColor = Color.Black;
             comboBox19.FormattingEnabled = true;
-            comboBox19.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox19.Items.AddRange(new object[] { "Barbell Deadlift" });
             comboBox19.Location = new Point(74, 210);
             comboBox19.Name = "comboBox19";
-            comboBox19.Size = new Size(179, 36);
+            comboBox19.Size = new Size(179, 32);
             comboBox19.TabIndex = 18;
             comboBox19.Text = "Barbell Deadlift";
             // 
@@ -692,13 +700,13 @@ namespace Without_Coach
             comboBox20.BackColor = Color.LightGray;
             comboBox20.Cursor = Cursors.Hand;
             comboBox20.FlatStyle = FlatStyle.System;
-            comboBox20.Font = new Font("Segoe UI", 12F);
+            comboBox20.Font = new Font("Rockwell Condensed", 12F);
             comboBox20.ForeColor = Color.Black;
             comboBox20.FormattingEnabled = true;
-            comboBox20.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox20.Items.AddRange(new object[] { "Dumbbell Lateral Raise" });
             comboBox20.Location = new Point(74, 174);
             comboBox20.Name = "comboBox20";
-            comboBox20.Size = new Size(179, 36);
+            comboBox20.Size = new Size(179, 32);
             comboBox20.TabIndex = 17;
             comboBox20.Text = "Dumbbell Lateral Raise";
             // 
@@ -707,13 +715,13 @@ namespace Without_Coach
             comboBox4.BackColor = Color.LightGray;
             comboBox4.Cursor = Cursors.Hand;
             comboBox4.FlatStyle = FlatStyle.System;
-            comboBox4.Font = new Font("Segoe UI", 14F);
+            comboBox4.Font = new Font("Rockwell Condensed", 12F);
             comboBox4.ForeColor = Color.Black;
             comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox4.Items.AddRange(new object[] { "Barbell Back Squat " });
             comboBox4.Location = new Point(74, 354);
             comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(179, 39);
+            comboBox4.Size = new Size(179, 32);
             comboBox4.TabIndex = 16;
             comboBox4.Text = "Barbell Back Squat ";
             // 
@@ -722,13 +730,13 @@ namespace Without_Coach
             comboBox5.BackColor = Color.LightGray;
             comboBox5.Cursor = Cursors.Hand;
             comboBox5.FlatStyle = FlatStyle.System;
-            comboBox5.Font = new Font("Segoe UI", 12F);
+            comboBox5.Font = new Font("Rockwell Condensed", 12F);
             comboBox5.ForeColor = Color.Black;
             comboBox5.FormattingEnabled = true;
-            comboBox5.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox5.Items.AddRange(new object[] { "One-Arm Dumbbell Row" });
             comboBox5.Location = new Point(74, 318);
             comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(179, 36);
+            comboBox5.Size = new Size(179, 32);
             comboBox5.TabIndex = 15;
             comboBox5.Text = "One-Arm Dumbbell Row";
             // 
@@ -737,28 +745,28 @@ namespace Without_Coach
             comboBox6.BackColor = Color.LightGray;
             comboBox6.Cursor = Cursors.Hand;
             comboBox6.FlatStyle = FlatStyle.System;
-            comboBox6.Font = new Font("Segoe UI", 12F);
+            comboBox6.Font = new Font("Rockwell Condensed", 12F);
             comboBox6.ForeColor = Color.Black;
             comboBox6.FormattingEnabled = true;
-            comboBox6.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox6.Items.AddRange(new object[] { "Chin-up" });
             comboBox6.Location = new Point(74, 282);
             comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(179, 36);
+            comboBox6.Size = new Size(179, 32);
             comboBox6.TabIndex = 14;
-            comboBox6.Text = "Chin-up (Weighted)";
+            comboBox6.Text = "Chin-up ";
             // 
             // comboBox8
             // 
             comboBox8.BackColor = Color.LightGray;
             comboBox8.Cursor = Cursors.Hand;
             comboBox8.FlatStyle = FlatStyle.System;
-            comboBox8.Font = new Font("Segoe UI", 14F);
+            comboBox8.Font = new Font("Rockwell Condensed", 14F);
             comboBox8.ForeColor = Color.Black;
             comboBox8.FormattingEnabled = true;
-            comboBox8.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox8.Items.AddRange(new object[] { "Standing Calf Raise" });
             comboBox8.Location = new Point(74, 465);
             comboBox8.Name = "comboBox8";
-            comboBox8.Size = new Size(179, 39);
+            comboBox8.Size = new Size(179, 35);
             comboBox8.TabIndex = 12;
             comboBox8.Text = "Standing Calf Raise";
             // 
@@ -767,13 +775,13 @@ namespace Without_Coach
             comboBox9.BackColor = Color.LightGray;
             comboBox9.Cursor = Cursors.Hand;
             comboBox9.FlatStyle = FlatStyle.System;
-            comboBox9.Font = new Font("Segoe UI", 12F);
+            comboBox9.Font = new Font("Rockwell Condensed", 12F);
             comboBox9.ForeColor = Color.Black;
             comboBox9.FormattingEnabled = true;
-            comboBox9.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox9.Items.AddRange(new object[] { "Bulgarian Split Squat" });
             comboBox9.Location = new Point(74, 429);
             comboBox9.Name = "comboBox9";
-            comboBox9.Size = new Size(179, 36);
+            comboBox9.Size = new Size(179, 32);
             comboBox9.TabIndex = 11;
             comboBox9.Text = "Bulgarian Split Squat";
             // 
@@ -782,13 +790,13 @@ namespace Without_Coach
             comboBox14.BackColor = Color.LightGray;
             comboBox14.Cursor = Cursors.Hand;
             comboBox14.FlatStyle = FlatStyle.System;
-            comboBox14.Font = new Font("Segoe UI", 12F);
+            comboBox14.Font = new Font("Rockwell Condensed", 12F);
             comboBox14.ForeColor = Color.Black;
             comboBox14.FormattingEnabled = true;
-            comboBox14.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox14.Items.AddRange(new object[] { "Barbell Front Squat " });
             comboBox14.Location = new Point(74, 393);
             comboBox14.Name = "comboBox14";
-            comboBox14.Size = new Size(179, 36);
+            comboBox14.Size = new Size(179, 32);
             comboBox14.TabIndex = 10;
             comboBox14.Text = "Barbell Front Squat ";
             // 
@@ -1003,5 +1011,6 @@ namespace Without_Coach
         private TextBox textBox12;
         private TextBox textBox11;
         private TextBox textBox10;
+        private LinkLabel linkLabel1;
     }
 }

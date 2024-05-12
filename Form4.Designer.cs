@@ -36,7 +36,6 @@
             panel3 = new Panel();
             label14 = new Label();
             label15 = new Label();
-            label13 = new Label();
             label16 = new Label();
             label17 = new Label();
             label18 = new Label();
@@ -151,7 +150,7 @@
             panel1.ForeColor = SystemColors.ControlText;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(339, 1036);
+            panel1.Size = new Size(339, 1053);
             panel1.TabIndex = 11;
             // 
             // label5
@@ -194,7 +193,6 @@
             panel3.BackgroundImageLayout = ImageLayout.Stretch;
             panel3.Controls.Add(label14);
             panel3.Controls.Add(label15);
-            panel3.Controls.Add(label13);
             panel3.Controls.Add(label16);
             panel3.Controls.Add(label17);
             panel3.Controls.Add(label18);
@@ -295,7 +293,7 @@
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(339, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1247, 1036);
+            panel3.Size = new Size(1247, 1053);
             panel3.TabIndex = 19;
             // 
             // label14
@@ -321,18 +319,7 @@
             label15.Size = new Size(27, 31);
             label15.TabIndex = 129;
             label15.Text = "3";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.FlatStyle = FlatStyle.Flat;
-            label13.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.World, 0);
-            label13.ForeColor = SystemColors.ActiveCaptionText;
-            label13.Location = new Point(311, 1030);
-            label13.Name = "label13";
-            label13.Size = new Size(27, 31);
-            label13.TabIndex = 127;
-            label13.Text = "3";
+            label15.Click += label15_Click;
             // 
             // label16
             // 
@@ -570,7 +557,6 @@
             textBox25.Name = "textBox25";
             textBox25.Size = new Size(134, 32);
             textBox25.TabIndex = 97;
-            textBox25.Text = "         10-15";
             // 
             // textBox26
             // 
@@ -580,7 +566,6 @@
             textBox26.Name = "textBox26";
             textBox26.Size = new Size(134, 32);
             textBox26.TabIndex = 96;
-            textBox26.Text = "          8-15";
             // 
             // textBox27
             // 
@@ -590,7 +575,6 @@
             textBox27.Name = "textBox27";
             textBox27.Size = new Size(134, 32);
             textBox27.TabIndex = 95;
-            textBox27.Text = "          6-10";
             // 
             // textBox28
             // 
@@ -600,7 +584,6 @@
             textBox28.Name = "textBox28";
             textBox28.Size = new Size(134, 32);
             textBox28.TabIndex = 94;
-            textBox28.Text = "          6-10";
             // 
             // textBox29
             // 
@@ -610,7 +593,6 @@
             textBox29.Name = "textBox29";
             textBox29.Size = new Size(134, 32);
             textBox29.TabIndex = 93;
-            textBox29.Text = "         10-15";
             // 
             // textBox30
             // 
@@ -620,7 +602,6 @@
             textBox30.Name = "textBox30";
             textBox30.Size = new Size(134, 32);
             textBox30.TabIndex = 92;
-            textBox30.Text = "         10-15";
             // 
             // textBox31
             // 
@@ -630,7 +611,6 @@
             textBox31.Name = "textBox31";
             textBox31.Size = new Size(134, 32);
             textBox31.TabIndex = 91;
-            textBox31.Text = "          6-12";
             // 
             // textBox32
             // 
@@ -640,7 +620,6 @@
             textBox32.Name = "textBox32";
             textBox32.Size = new Size(134, 32);
             textBox32.TabIndex = 90;
-            textBox32.Text = "          6-12";
             // 
             // textBox33
             // 
@@ -650,7 +629,6 @@
             textBox33.Name = "textBox33";
             textBox33.Size = new Size(134, 32);
             textBox33.TabIndex = 89;
-            textBox33.Text = "         12-15";
             // 
             // textBox34
             // 
@@ -660,7 +638,6 @@
             textBox34.Name = "textBox34";
             textBox34.Size = new Size(134, 32);
             textBox34.TabIndex = 88;
-            textBox34.Text = "         8-12";
             // 
             // textBox35
             // 
@@ -670,7 +647,6 @@
             textBox35.Name = "textBox35";
             textBox35.Size = new Size(134, 32);
             textBox35.TabIndex = 87;
-            textBox35.Text = "         8-12";
             // 
             // textBox36
             // 
@@ -680,7 +656,6 @@
             textBox36.Name = "textBox36";
             textBox36.Size = new Size(134, 32);
             textBox36.TabIndex = 86;
-            textBox36.Text = "          6-8";
             // 
             // label24
             // 
@@ -699,13 +674,13 @@
             comboBox2.BackColor = Color.LightGray;
             comboBox2.Cursor = Cursors.Hand;
             comboBox2.FlatStyle = FlatStyle.System;
-            comboBox2.Font = new Font("Segoe UI", 15F);
+            comboBox2.Font = new Font("Rockwell Condensed", 12F);
             comboBox2.ForeColor = Color.Black;
             comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox2.Location = new Point(74, 944);
+            comboBox2.Items.AddRange(new object[] { "Glute Ham Raise" });
+            comboBox2.Location = new Point(74, 947);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(179, 43);
+            comboBox2.Size = new Size(179, 32);
             comboBox2.TabIndex = 73;
             comboBox2.Text = "Glute Ham Raise";
             // 
@@ -714,13 +689,13 @@
             comboBox1.BackColor = Color.LightGray;
             comboBox1.Cursor = Cursors.Hand;
             comboBox1.FlatStyle = FlatStyle.System;
-            comboBox1.Font = new Font("Segoe UI", 12F);
+            comboBox1.Font = new Font("Rockwell Condensed", 12F);
             comboBox1.ForeColor = Color.Black;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox1.Location = new Point(74, 909);
+            comboBox1.Items.AddRange(new object[] { "Bulgarian Split Squat" });
+            comboBox1.Location = new Point(74, 907);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(179, 36);
+            comboBox1.Size = new Size(179, 32);
             comboBox1.TabIndex = 72;
             comboBox1.Text = "Bulgarian Split Squat";
             // 
@@ -729,12 +704,13 @@
             comboBox25.BackColor = Color.LightGray;
             comboBox25.Cursor = Cursors.Hand;
             comboBox25.FlatStyle = FlatStyle.System;
-            comboBox25.Font = new Font("Segoe UI", 14F);
+            comboBox25.Font = new Font("Rockwell Condensed", 12F);
             comboBox25.ForeColor = Color.Black;
             comboBox25.FormattingEnabled = true;
-            comboBox25.Location = new Point(74, 579);
+            comboBox25.Items.AddRange(new object[] { "Seated Shoulder Press" });
+            comboBox25.Location = new Point(74, 584);
             comboBox25.Name = "comboBox25";
-            comboBox25.Size = new Size(179, 39);
+            comboBox25.Size = new Size(179, 32);
             comboBox25.TabIndex = 71;
             comboBox25.Text = "Seated Shoulder Press";
             // 
@@ -743,13 +719,13 @@
             comboBox26.BackColor = Color.LightGray;
             comboBox26.Cursor = Cursors.Hand;
             comboBox26.FlatStyle = FlatStyle.System;
-            comboBox26.Font = new Font("Segoe UI", 12F);
+            comboBox26.Font = new Font("Rockwell Condensed", 12F);
             comboBox26.ForeColor = Color.Black;
             comboBox26.FormattingEnabled = true;
-            comboBox26.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox26.Location = new Point(74, 545);
+            comboBox26.Items.AddRange(new object[] { "Incline Dumbbell Press" });
+            comboBox26.Location = new Point(74, 544);
             comboBox26.Name = "comboBox26";
-            comboBox26.Size = new Size(179, 36);
+            comboBox26.Size = new Size(179, 32);
             comboBox26.TabIndex = 70;
             comboBox26.Text = "Incline Dumbbell Press";
             // 
@@ -758,13 +734,13 @@
             comboBox27.BackColor = Color.LightGray;
             comboBox27.Cursor = Cursors.Hand;
             comboBox27.FlatStyle = FlatStyle.System;
-            comboBox27.Font = new Font("Segoe UI", 15F);
+            comboBox27.Font = new Font("Rockwell Condensed", 12F);
             comboBox27.ForeColor = Color.Black;
             comboBox27.FormattingEnabled = true;
-            comboBox27.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox27.Items.AddRange(new object[] { "Bench Press" });
             comboBox27.Location = new Point(74, 503);
             comboBox27.Name = "comboBox27";
-            comboBox27.Size = new Size(179, 43);
+            comboBox27.Size = new Size(179, 32);
             comboBox27.TabIndex = 69;
             comboBox27.Text = "Bench Press";
             // 
@@ -773,13 +749,13 @@
             comboBox28.BackColor = Color.LightGray;
             comboBox28.Cursor = Cursors.Hand;
             comboBox28.FlatStyle = FlatStyle.System;
-            comboBox28.Font = new Font("Segoe UI", 17F);
+            comboBox28.Font = new Font("Rockwell Condensed", 12F);
             comboBox28.ForeColor = Color.Black;
             comboBox28.FormattingEnabled = true;
-            comboBox28.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox28.Location = new Point(74, 655);
+            comboBox28.Items.AddRange(new object[] { "Pull Up" });
+            comboBox28.Location = new Point(74, 664);
             comboBox28.Name = "comboBox28";
-            comboBox28.Size = new Size(179, 46);
+            comboBox28.Size = new Size(179, 32);
             comboBox28.TabIndex = 68;
             comboBox28.Text = "Pull Up";
             // 
@@ -788,13 +764,13 @@
             comboBox29.BackColor = Color.LightGray;
             comboBox29.Cursor = Cursors.Hand;
             comboBox29.FlatStyle = FlatStyle.System;
-            comboBox29.Font = new Font("Segoe UI", 15F);
+            comboBox29.Font = new Font("Rockwell Condensed", 12F);
             comboBox29.ForeColor = Color.Black;
             comboBox29.FormattingEnabled = true;
-            comboBox29.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox29.Location = new Point(74, 620);
+            comboBox29.Items.AddRange(new object[] { "Lateral  Raises" });
+            comboBox29.Location = new Point(74, 625);
             comboBox29.Name = "comboBox29";
-            comboBox29.Size = new Size(179, 43);
+            comboBox29.Size = new Size(179, 32);
             comboBox29.TabIndex = 67;
             comboBox29.Text = "Lateral  Raises";
             // 
@@ -803,13 +779,13 @@
             comboBox31.BackColor = Color.LightGray;
             comboBox31.Cursor = Cursors.Hand;
             comboBox31.FlatStyle = FlatStyle.System;
-            comboBox31.Font = new Font("Segoe UI", 14F);
+            comboBox31.Font = new Font("Rockwell Condensed", 12F);
             comboBox31.ForeColor = Color.Black;
             comboBox31.FormattingEnabled = true;
-            comboBox31.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox31.Location = new Point(74, 788);
+            comboBox31.Items.AddRange(new object[] { "Dumbbell Row" });
+            comboBox31.Location = new Point(74, 784);
             comboBox31.Name = "comboBox31";
-            comboBox31.Size = new Size(179, 39);
+            comboBox31.Size = new Size(179, 32);
             comboBox31.TabIndex = 65;
             comboBox31.Text = "Dumbbell Row";
             // 
@@ -818,13 +794,13 @@
             comboBox32.BackColor = Color.LightGray;
             comboBox32.Cursor = Cursors.Hand;
             comboBox32.FlatStyle = FlatStyle.System;
-            comboBox32.Font = new Font("Segoe UI", 14F);
+            comboBox32.Font = new Font("Rockwell Condensed", 12F);
             comboBox32.ForeColor = Color.Black;
             comboBox32.FormattingEnabled = true;
-            comboBox32.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox32.Items.AddRange(new object[] { "Seated Cable Row" });
             comboBox32.Location = new Point(74, 746);
             comboBox32.Name = "comboBox32";
-            comboBox32.Size = new Size(179, 39);
+            comboBox32.Size = new Size(179, 32);
             comboBox32.TabIndex = 64;
             comboBox32.Text = "Seated Cable Row";
             // 
@@ -833,13 +809,13 @@
             comboBox33.BackColor = Color.LightGray;
             comboBox33.Cursor = Cursors.Hand;
             comboBox33.FlatStyle = FlatStyle.System;
-            comboBox33.Font = new Font("Segoe UI", 12F);
+            comboBox33.Font = new Font("Rockwell Condensed", 12F);
             comboBox33.ForeColor = Color.Black;
             comboBox33.FormattingEnabled = true;
-            comboBox33.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox33.Items.AddRange(new object[] { "Barbell Bent Over Row" });
             comboBox33.Location = new Point(74, 704);
             comboBox33.Name = "comboBox33";
-            comboBox33.Size = new Size(179, 36);
+            comboBox33.Size = new Size(179, 32);
             comboBox33.TabIndex = 63;
             comboBox33.Text = "Barbell Bent Over Row";
             // 
@@ -848,13 +824,13 @@
             comboBox35.BackColor = Color.LightGray;
             comboBox35.Cursor = Cursors.Hand;
             comboBox35.FlatStyle = FlatStyle.System;
-            comboBox35.Font = new Font("Segoe UI", 14F);
+            comboBox35.Font = new Font("Rockwell Condensed", 12F);
             comboBox35.ForeColor = Color.Black;
             comboBox35.FormattingEnabled = true;
-            comboBox35.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox35.Items.AddRange(new object[] { "Romanian Deadlift" });
             comboBox35.Location = new Point(74, 866);
             comboBox35.Name = "comboBox35";
-            comboBox35.Size = new Size(179, 39);
+            comboBox35.Size = new Size(179, 32);
             comboBox35.TabIndex = 61;
             comboBox35.Text = "Romanian Deadlift";
             // 
@@ -863,13 +839,13 @@
             comboBox36.BackColor = Color.LightGray;
             comboBox36.Cursor = Cursors.Hand;
             comboBox36.FlatStyle = FlatStyle.System;
-            comboBox36.Font = new Font("Segoe UI", 12F);
+            comboBox36.Font = new Font("Rockwell Condensed", 12F);
             comboBox36.ForeColor = Color.Black;
             comboBox36.FormattingEnabled = true;
-            comboBox36.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox36.Items.AddRange(new object[] { "Squat" });
             comboBox36.Location = new Point(74, 826);
             comboBox36.Name = "comboBox36";
-            comboBox36.Size = new Size(179, 36);
+            comboBox36.Size = new Size(179, 32);
             comboBox36.TabIndex = 60;
             comboBox36.Text = "Squat";
             // 
@@ -999,7 +975,6 @@
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(134, 32);
             textBox12.TabIndex = 46;
-            textBox12.Text = "          8-10";
             // 
             // textBox11
             // 
@@ -1009,7 +984,6 @@
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(134, 32);
             textBox11.TabIndex = 45;
-            textBox11.Text = "           4-6";
             // 
             // textBox10
             // 
@@ -1019,7 +993,6 @@
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(134, 32);
             textBox10.TabIndex = 44;
-            textBox10.Text = "          4-6";
             // 
             // textBox9
             // 
@@ -1029,7 +1002,6 @@
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(134, 32);
             textBox9.TabIndex = 43;
-            textBox9.Text = "          4-6";
             // 
             // textBox8
             // 
@@ -1039,7 +1011,6 @@
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(134, 32);
             textBox8.TabIndex = 42;
-            textBox8.Text = "         8-10";
             // 
             // textBox7
             // 
@@ -1049,7 +1020,6 @@
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(134, 32);
             textBox7.TabIndex = 41;
-            textBox7.Text = "          4-6";
             // 
             // textBox6
             // 
@@ -1059,7 +1029,6 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(134, 32);
             textBox6.TabIndex = 40;
-            textBox6.Text = "          4-6";
             // 
             // textBox5
             // 
@@ -1069,7 +1038,6 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(134, 32);
             textBox5.TabIndex = 39;
-            textBox5.Text = "          4-6";
             // 
             // textBox4
             // 
@@ -1079,7 +1047,6 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(134, 32);
             textBox4.TabIndex = 38;
-            textBox4.Text = "          8-10";
             // 
             // textBox3
             // 
@@ -1089,7 +1056,6 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(134, 32);
             textBox3.TabIndex = 37;
-            textBox3.Text = "          4-6";
             // 
             // textBox2
             // 
@@ -1099,7 +1065,6 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(134, 32);
             textBox2.TabIndex = 36;
-            textBox2.Text = "          4-6";
             // 
             // textBox1
             // 
@@ -1262,13 +1227,13 @@
             comboBox15.BackColor = Color.LightGray;
             comboBox15.Cursor = Cursors.Hand;
             comboBox15.FlatStyle = FlatStyle.System;
-            comboBox15.Font = new Font("Segoe UI", 14F);
+            comboBox15.Font = new Font("Rockwell Condensed", 12F);
             comboBox15.ForeColor = Color.Black;
             comboBox15.FormattingEnabled = true;
-            comboBox15.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox15.Items.AddRange(new object[] { "Standing Military Press" });
             comboBox15.Location = new Point(74, 135);
             comboBox15.Name = "comboBox15";
-            comboBox15.Size = new Size(179, 39);
+            comboBox15.Size = new Size(179, 32);
             comboBox15.TabIndex = 22;
             comboBox15.Text = "Standing Military Press";
             // 
@@ -1277,13 +1242,13 @@
             comboBox16.BackColor = Color.LightGray;
             comboBox16.Cursor = Cursors.Hand;
             comboBox16.FlatStyle = FlatStyle.System;
-            comboBox16.Font = new Font("Segoe UI", 12F);
+            comboBox16.Font = new Font("Rockwell Condensed", 12F);
             comboBox16.ForeColor = Color.Black;
             comboBox16.FormattingEnabled = true;
-            comboBox16.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox16.Items.AddRange(new object[] { "Close-Grip Bench Press" });
             comboBox16.Location = new Point(74, 99);
             comboBox16.Name = "comboBox16";
-            comboBox16.Size = new Size(179, 36);
+            comboBox16.Size = new Size(179, 32);
             comboBox16.TabIndex = 21;
             comboBox16.Text = "Close-Grip Bench Press";
             // 
@@ -1292,12 +1257,13 @@
             comboBox17.BackColor = Color.LightGray;
             comboBox17.Cursor = Cursors.Hand;
             comboBox17.FlatStyle = FlatStyle.System;
-            comboBox17.Font = new Font("Segoe UI", 12F);
+            comboBox17.Font = new Font("Rockwell Condensed", 12F);
             comboBox17.ForeColor = Color.Black;
             comboBox17.FormattingEnabled = true;
+            comboBox17.Items.AddRange(new object[] { "Barbell Bench Press" });
             comboBox17.Location = new Point(74, 63);
             comboBox17.Name = "comboBox17";
-            comboBox17.Size = new Size(179, 36);
+            comboBox17.Size = new Size(179, 32);
             comboBox17.TabIndex = 20;
             comboBox17.Text = "Barbell Bench Press";
             // 
@@ -1306,13 +1272,13 @@
             comboBox18.BackColor = Color.LightGray;
             comboBox18.Cursor = Cursors.Hand;
             comboBox18.FlatStyle = FlatStyle.System;
-            comboBox18.Font = new Font("Segoe UI", 14F);
+            comboBox18.Font = new Font("Rockwell Condensed", 12F);
             comboBox18.ForeColor = Color.Black;
             comboBox18.FormattingEnabled = true;
-            comboBox18.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox18.Items.AddRange(new object[] { "Barbell Row" });
             comboBox18.Location = new Point(74, 246);
             comboBox18.Name = "comboBox18";
-            comboBox18.Size = new Size(179, 39);
+            comboBox18.Size = new Size(179, 32);
             comboBox18.TabIndex = 19;
             comboBox18.Text = "Barbell Row";
             // 
@@ -1321,13 +1287,13 @@
             comboBox19.BackColor = Color.LightGray;
             comboBox19.Cursor = Cursors.Hand;
             comboBox19.FlatStyle = FlatStyle.System;
-            comboBox19.Font = new Font("Segoe UI", 12F);
+            comboBox19.Font = new Font("Rockwell Condensed", 12F);
             comboBox19.ForeColor = Color.Black;
             comboBox19.FormattingEnabled = true;
-            comboBox19.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox19.Items.AddRange(new object[] { "Barbell Deadlift " });
             comboBox19.Location = new Point(74, 210);
             comboBox19.Name = "comboBox19";
-            comboBox19.Size = new Size(179, 36);
+            comboBox19.Size = new Size(179, 32);
             comboBox19.TabIndex = 18;
             comboBox19.Text = "Barbell Deadlift ";
             // 
@@ -1336,13 +1302,13 @@
             comboBox20.BackColor = Color.LightGray;
             comboBox20.Cursor = Cursors.Hand;
             comboBox20.FlatStyle = FlatStyle.System;
-            comboBox20.Font = new Font("Segoe UI", 12F);
+            comboBox20.Font = new Font("Rockwell Condensed", 12F);
             comboBox20.ForeColor = Color.Black;
             comboBox20.FormattingEnabled = true;
-            comboBox20.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox20.Items.AddRange(new object[] { "Dumbbell Lateral Raise " });
             comboBox20.Location = new Point(74, 174);
             comboBox20.Name = "comboBox20";
-            comboBox20.Size = new Size(179, 36);
+            comboBox20.Size = new Size(179, 32);
             comboBox20.TabIndex = 17;
             comboBox20.Text = "Dumbbell Lateral Raise ";
             // 
@@ -1351,13 +1317,13 @@
             comboBox4.BackColor = Color.LightGray;
             comboBox4.Cursor = Cursors.Hand;
             comboBox4.FlatStyle = FlatStyle.System;
-            comboBox4.Font = new Font("Segoe UI", 14F);
+            comboBox4.Font = new Font("Rockwell Condensed", 12F);
             comboBox4.ForeColor = Color.Black;
             comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox4.Items.AddRange(new object[] { "Barbell Back Squat" });
             comboBox4.Location = new Point(74, 354);
             comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(179, 39);
+            comboBox4.Size = new Size(179, 32);
             comboBox4.TabIndex = 16;
             comboBox4.Text = "Barbell Back Squat";
             // 
@@ -1366,13 +1332,13 @@
             comboBox5.BackColor = Color.LightGray;
             comboBox5.Cursor = Cursors.Hand;
             comboBox5.FlatStyle = FlatStyle.System;
-            comboBox5.Font = new Font("Segoe UI", 12F);
+            comboBox5.Font = new Font("Rockwell Condensed", 12F);
             comboBox5.ForeColor = Color.Black;
             comboBox5.FormattingEnabled = true;
-            comboBox5.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox5.Items.AddRange(new object[] { "One-Arm Dumbbell Row" });
             comboBox5.Location = new Point(74, 318);
             comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(179, 36);
+            comboBox5.Size = new Size(179, 32);
             comboBox5.TabIndex = 15;
             comboBox5.Text = "One-Arm Dumbbell Row";
             // 
@@ -1381,28 +1347,28 @@
             comboBox6.BackColor = Color.LightGray;
             comboBox6.Cursor = Cursors.Hand;
             comboBox6.FlatStyle = FlatStyle.System;
-            comboBox6.Font = new Font("Segoe UI", 12F);
+            comboBox6.Font = new Font("Rockwell Condensed", 12F);
             comboBox6.ForeColor = Color.Black;
             comboBox6.FormattingEnabled = true;
-            comboBox6.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox6.Items.AddRange(new object[] { "Chin-up" });
             comboBox6.Location = new Point(74, 282);
             comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(179, 36);
+            comboBox6.Size = new Size(179, 32);
             comboBox6.TabIndex = 14;
-            comboBox6.Text = "Chin-up(Weighted)";
+            comboBox6.Text = "Chin-up";
             // 
             // comboBox8
             // 
             comboBox8.BackColor = Color.LightGray;
             comboBox8.Cursor = Cursors.Hand;
             comboBox8.FlatStyle = FlatStyle.System;
-            comboBox8.Font = new Font("Segoe UI", 14F);
+            comboBox8.Font = new Font("Rockwell Condensed", 12F);
             comboBox8.ForeColor = Color.Black;
             comboBox8.FormattingEnabled = true;
-            comboBox8.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox8.Items.AddRange(new object[] { "Standing Calf Raise" });
             comboBox8.Location = new Point(74, 465);
             comboBox8.Name = "comboBox8";
-            comboBox8.Size = new Size(179, 39);
+            comboBox8.Size = new Size(179, 32);
             comboBox8.TabIndex = 12;
             comboBox8.Text = "Standing Calf Raise";
             // 
@@ -1411,13 +1377,13 @@
             comboBox9.BackColor = Color.LightGray;
             comboBox9.Cursor = Cursors.Hand;
             comboBox9.FlatStyle = FlatStyle.System;
-            comboBox9.Font = new Font("Segoe UI", 12F);
+            comboBox9.Font = new Font("Rockwell Condensed", 12F);
             comboBox9.ForeColor = Color.Black;
             comboBox9.FormattingEnabled = true;
-            comboBox9.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox9.Items.AddRange(new object[] { "Bulgarian Split Squat " });
             comboBox9.Location = new Point(74, 429);
             comboBox9.Name = "comboBox9";
-            comboBox9.Size = new Size(179, 36);
+            comboBox9.Size = new Size(179, 32);
             comboBox9.TabIndex = 11;
             comboBox9.Text = "Bulgarian Split Squat ";
             // 
@@ -1426,13 +1392,13 @@
             comboBox14.BackColor = Color.LightGray;
             comboBox14.Cursor = Cursors.Hand;
             comboBox14.FlatStyle = FlatStyle.System;
-            comboBox14.Font = new Font("Segoe UI", 12F);
+            comboBox14.Font = new Font("Rockwell Condensed", 12F);
             comboBox14.ForeColor = Color.Black;
             comboBox14.FormattingEnabled = true;
-            comboBox14.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
+            comboBox14.Items.AddRange(new object[] { "Barbell Front Squat " });
             comboBox14.Location = new Point(74, 393);
             comboBox14.Name = "comboBox14";
-            comboBox14.Size = new Size(179, 36);
+            comboBox14.Size = new Size(179, 32);
             comboBox14.TabIndex = 10;
             comboBox14.Text = "Barbell Front Squat ";
             // 
@@ -1450,7 +1416,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1586, 1036);
+            ClientSize = new Size(1586, 1053);
             Controls.Add(panel3);
             Controls.Add(panel1);
             Name = "Form4";
@@ -1559,7 +1525,6 @@
         private ComboBox comboBox9;
         private ComboBox comboBox14;
         private PictureBox pictureBox3;
-        private Label label13;
         private Label label16;
         private Label label17;
         private Label label18;

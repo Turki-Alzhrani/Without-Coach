@@ -37,31 +37,42 @@
             // 
             // button1
             // 
-            button1.BackgroundImage = Properties.Resources.aee;
-            button1.Location = new Point(23, 132);
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button1.AutoSize = true;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Location = new Point(109, 222);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(179, 97);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Size = new Size(227, 143);
+            button1.TabIndex = 1;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button2.AutoSize = true;
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
-            button2.Location = new Point(265, 132);
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.Location = new Point(406, 222);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(182, 105);
+            button2.Size = new Size(227, 143);
             button2.TabIndex = 1;
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
             // button3
             // 
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button3.AutoSize = true;
             button3.BackgroundImage = Properties.Resources._3_Day_Full_Body_Workout_Routine__with_PDF_;
-            button3.Location = new Point(525, 132);
+            button3.BackgroundImageLayout = ImageLayout.Stretch;
+            button3.Location = new Point(740, 222);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(166, 105);
+            button3.Size = new Size(227, 143);
             button3.TabIndex = 2;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
@@ -71,22 +82,24 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = SystemColors.WindowFrame;
-            label1.Location = new Point(12, 18);
+            label1.Font = new Font("Segoe UI", 16F);
+            label1.Location = new Point(14, 24);
             label1.Name = "label1";
-            label1.Size = new Size(216, 45);
+            label1.Size = new Size(501, 111);
             label1.TabIndex = 3;
-            label1.Text = " \r\nchose the sestym of the label..(3 days) : \r\n\r\n";
+            label1.Text = " \r\nchoose the system of the table..(3 days) : \r\n\r\n";
             // 
             // before_form3
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.WindowFrame;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1045, 627);
             Controls.Add(label1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "before_form3";
             Text = "before_form3";
             ResumeLayout(false);

@@ -80,5 +80,10 @@ namespace Without_Coach
         {
 
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

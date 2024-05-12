@@ -63,5 +63,40 @@ namespace Without_Coach
         {
 
         }
+
+        private void comboBox17_SelectedIndexChanged(object sender, EventArgs e)
+
+        {
+            if (comboBox17.SelectedIndex == 0)
+            {
+                // Set the link for the first item
+                linkLabel1.Text = "Link 1";
+                linkLabel1.Tag = "https://youtube.com/shorts/0cXAp6WhSj4?si=TCF-NA1j5bAwJ4X_"; // Set the URL as the Tag property
+            }
+            else if (comboBox17.SelectedIndex == 1)
+            {
+                // Set the link for the second item
+                linkLabel1.Text = "Link 2";
+                linkLabel1.Tag = "https://example.com/link2"; // Set the URL as the Tag property
+            }
+            else
+            {
+                // Clear the link label if no item is selected
+                linkLabel1.Text = "";
+
+            }
+        }
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (linkLabel1.Tag != null && linkLabel1.Tag is string url)
+            {
+                System.Diagnostics.Process.Start(url);
+            }
+        }
     }
 }

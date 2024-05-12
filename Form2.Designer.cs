@@ -28,143 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            comboBox1 = new ComboBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
-            button1 = new Button();
             panel1 = new Panel();
-            label4 = new Label();
             label5 = new Label();
             pictureBox1 = new PictureBox();
+            panel3 = new Panel();
+            button1 = new Button();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            comboBox3 = new ComboBox();
+            comboBox2 = new ComboBox();
+            comboBox1 = new ComboBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel3.SuspendLayout();
             SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            comboBox1.BackColor = SystemColors.InactiveBorder;
-            comboBox1.Cursor = Cursors.Hand;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "3", "4", "5", "6" });
-            comboBox1.Location = new Point(570, 85);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 1;
-            comboBox1.Text = "Days";
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
-            comboBox1.Click += comboBox1_Click;
-            comboBox1.KeyDown += comboBox1_KeyDown;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F);
-            label1.Location = new Point(338, 81);
-            label1.Name = "label1";
-            label1.Size = new Size(192, 28);
-            label1.TabIndex = 2;
-            label1.Text = "Days of the workout:";
-            label1.Click += label1_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(338, 162);
-            label2.Name = "label2";
-            label2.Size = new Size(194, 28);
-            label2.TabIndex = 3;
-            label2.Text = "Level of the workout:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.FlatStyle = FlatStyle.Flat;
-            label3.Font = new Font("Segoe UI", 12F);
-            label3.Location = new Point(338, 247);
-            label3.Name = "label3";
-            label3.Size = new Size(218, 28);
-            label3.TabIndex = 4;
-            label3.Text = "Where do you workout:";
-            label3.Click += label3_Click;
-            // 
-            // comboBox2
-            // 
-            comboBox2.Cursor = Cursors.Hand;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Easy", "Medium", "Hard" });
-            comboBox2.Location = new Point(570, 166);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(151, 28);
-            comboBox2.TabIndex = 5;
-            comboBox2.Text = "Level";
-            comboBox2.KeyDown += comboBox2_KeyDown;
-            // 
-            // comboBox3
-            // 
-            comboBox3.Cursor = Cursors.Hand;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "Home", "Gym" });
-            comboBox3.Location = new Point(570, 251);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(151, 28);
-            comboBox3.TabIndex = 6;
-            comboBox3.Text = "place";
-            comboBox3.KeyDown += comboBox3_KeyDown;
-            comboBox3.MouseDown += comboBox3_MouseDown;
-            // 
-            // button1
-            // 
-            button1.Anchor = AnchorStyles.Bottom;
-            button1.Cursor = Cursors.Hand;
-            button1.Location = new Point(581, 402);
-            button1.Name = "button1";
-            button1.Size = new Size(140, 45);
-            button1.TabIndex = 7;
-            button1.Text = "Next -->";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            button1.KeyDown += button1_KeyDown;
             // 
             // panel1
             // 
             panel1.BackColor = Color.DimGray;
-            panel1.Controls.Add(label4);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Left;
             panel1.ForeColor = SystemColors.ControlText;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(332, 496);
-            panel1.TabIndex = 8;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.FlatStyle = FlatStyle.Flat;
-            label4.Font = new Font("Yu Gothic UI Semilight", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(160, 305);
-            label4.Name = "label4";
-            label4.Size = new Size(172, 41);
-            label4.TabIndex = 2;
-            label4.Text = "Your desires";
+            panel1.Size = new Size(339, 649);
+            panel1.TabIndex = 10;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.FlatStyle = FlatStyle.Flat;
-            label5.Font = new Font("Yu Gothic UI Semilight", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Yu Gothic UI Semilight", 17F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(0, 264);
+            label5.Location = new Point(-4, 333);
             label5.Name = "label5";
-            label5.Size = new Size(201, 41);
+            label5.Size = new Size(343, 40);
             label5.TabIndex = 1;
-            label5.Text = "Please chooce";
+            label5.Text = "Please chooce your desier";
+            label5.Click += label5_Click;
             // 
             // pictureBox1
             // 
@@ -176,47 +79,134 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // panel3
+            // 
+            panel3.BackColor = Color.LightGray;
+            panel3.BackgroundImageLayout = ImageLayout.Stretch;
+            panel3.Controls.Add(button1);
+            panel3.Controls.Add(label3);
+            panel3.Controls.Add(label2);
+            panel3.Controls.Add(label1);
+            panel3.Controls.Add(comboBox3);
+            panel3.Controls.Add(comboBox2);
+            panel3.Controls.Add(comboBox1);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(339, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(793, 649);
+            panel3.TabIndex = 18;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.WhiteSmoke;
+            button1.Cursor = Cursors.Hand;
+            button1.Location = new Point(213, 524);
+            button1.Name = "button1";
+            button1.Size = new Size(164, 59);
+            button1.TabIndex = 6;
+            button1.Text = "Next";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 15F);
+            label3.Location = new Point(41, 357);
+            label3.Name = "label3";
+            label3.Size = new Size(275, 35);
+            label3.TabIndex = 5;
+            label3.Text = "Where do you workout:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 15F);
+            label2.Location = new Point(54, 247);
+            label2.Name = "label2";
+            label2.Size = new Size(246, 35);
+            label2.TabIndex = 4;
+            label2.Text = "Level of the workout:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15F);
+            label1.Location = new Point(54, 129);
+            label1.Name = "label1";
+            label1.Size = new Size(244, 35);
+            label1.TabIndex = 3;
+            label1.Text = "Days of the workout:";
+            // 
+            // comboBox3
+            // 
+            comboBox3.Cursor = Cursors.Hand;
+            comboBox3.Font = new Font("Segoe UI", 10F);
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "Home", "Gym" });
+            comboBox3.Location = new Point(322, 364);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(151, 31);
+            comboBox3.TabIndex = 2;
+            comboBox3.Text = "Place";
+            comboBox3.KeyDown += comboBox3_KeyDown;
+            // 
+            // comboBox2
+            // 
+            comboBox2.Cursor = Cursors.Hand;
+            comboBox2.Font = new Font("Segoe UI", 10F);
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "easy", "mediume", "hard" });
+            comboBox2.Location = new Point(322, 254);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(151, 31);
+            comboBox2.TabIndex = 1;
+            comboBox2.Text = "Level";
+            comboBox2.DragEnter += comboBox2_DragEnter;
+            comboBox2.KeyDown += comboBox2_KeyDown;
+            // 
+            // comboBox1
+            // 
+            comboBox1.Cursor = Cursors.Hand;
+            comboBox1.Font = new Font("Segoe UI", 10F);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "3", "4", "5", "6" });
+            comboBox1.Location = new Point(322, 136);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(151, 31);
+            comboBox1.TabIndex = 0;
+            comboBox1.Text = "Days";
+            comboBox1.KeyDown += comboBox1_KeyDown;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
-            AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            BackColor = Color.LightGray;
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(866, 496);
+            ClientSize = new Size(1132, 649);
+            Controls.Add(panel3);
             Controls.Add(panel1);
-            Controls.Add(button1);
-            Controls.Add(comboBox3);
-            Controls.Add(comboBox2);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(comboBox1);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
-            HelpButton = true;
-            MaximizeBox = false;
             Name = "Form2";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Costumer deseirs";
+            Text = "Form2";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-        private ComboBox comboBox1;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private ComboBox comboBox2;
-        private ComboBox comboBox3;
-        private Button button1;
+
         private Panel panel1;
-        private Label label4;
         private Label label5;
         private PictureBox pictureBox1;
+        private Panel panel3;
+        private Label label2;
+        private Label label1;
+        private ComboBox comboBox3;
+        private ComboBox comboBox2;
+        private ComboBox comboBox1;
+        private Label label3;
+        private Button button1;
     }
 }
