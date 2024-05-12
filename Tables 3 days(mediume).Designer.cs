@@ -1,7 +1,6 @@
-﻿
-namespace Without_Coach
+﻿namespace Without_Coach
 {
-    partial class Form3
+    partial class Tables_3_days_mediume_
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +28,11 @@ namespace Without_Coach
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tables_3_days_mediume_));
             panel1 = new Panel();
             label5 = new Label();
             label6 = new Label();
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            panel2 = new Panel();
             panel3 = new Panel();
             linkLabel4 = new LinkLabel();
             linkLabel3 = new LinkLabel();
@@ -91,18 +87,8 @@ namespace Without_Coach
             comboBox9 = new ComboBox();
             comboBox14 = new ComboBox();
             pictureBox3 = new PictureBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
-            comboBox13 = new ComboBox();
-            comboBox12 = new ComboBox();
-            comboBox11 = new ComboBox();
-            comboBox10 = new ComboBox();
-            contextMenuStrip1 = new ContextMenuStrip(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
@@ -118,8 +104,7 @@ namespace Without_Coach
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(339, 738);
-            panel1.TabIndex = 9;
-            panel1.Paint += panel1_Paint;
+            panel1.TabIndex = 10;
             // 
             // label5
             // 
@@ -132,7 +117,6 @@ namespace Without_Coach
             label5.Size = new Size(331, 32);
             label5.TabIndex = 1;
             label5.Text = "\"A journey of a thousand miles";
-            label5.Click += label5_Click;
             // 
             // label6
             // 
@@ -155,35 +139,6 @@ namespace Without_Coach
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(51, 651);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(811, 506);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.LightGray;
-            panel2.BackgroundImageLayout = ImageLayout.Stretch;
-            panel2.Controls.Add(panel3);
-            panel2.Controls.Add(comboBox1);
-            panel2.Controls.Add(comboBox2);
-            panel2.Controls.Add(comboBox3);
-            panel2.Controls.Add(comboBox13);
-            panel2.Controls.Add(comboBox12);
-            panel2.Controls.Add(comboBox11);
-            panel2.Controls.Add(comboBox10);
-            panel2.Controls.Add(pictureBox2);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(339, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(950, 738);
-            panel2.TabIndex = 10;
             // 
             // panel3
             // 
@@ -244,11 +199,11 @@ namespace Without_Coach
             panel3.Controls.Add(pictureBox3);
             panel3.Dock = DockStyle.Fill;
             panel3.Font = new Font("Rockwell Condensed", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            panel3.Location = new Point(0, 0);
+            panel3.Location = new Point(339, 0);
             panel3.Name = "panel3";
             panel3.RightToLeft = RightToLeft.No;
             panel3.Size = new Size(950, 738);
-            panel3.TabIndex = 17;
+            panel3.TabIndex = 18;
             // 
             // linkLabel4
             // 
@@ -261,6 +216,7 @@ namespace Without_Coach
             linkLabel4.TabIndex = 62;
             linkLabel4.TabStop = true;
             linkLabel4.Text = "?";
+            linkLabel4.LinkClicked += linkLabel4_LinkClicked;
             // 
             // linkLabel3
             // 
@@ -273,6 +229,7 @@ namespace Without_Coach
             linkLabel3.TabIndex = 61;
             linkLabel3.TabStop = true;
             linkLabel3.Text = "?";
+            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
             // 
             // linkLabel2
             // 
@@ -285,6 +242,7 @@ namespace Without_Coach
             linkLabel2.TabIndex = 60;
             linkLabel2.TabStop = true;
             linkLabel2.Text = "?";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
             // linkLabel1
             // 
@@ -442,7 +400,6 @@ namespace Without_Coach
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(134, 32);
             textBox9.TabIndex = 43;
-            textBox9.TextChanged += textBox9_TextChanged;
             // 
             // textBox8
             // 
@@ -550,7 +507,7 @@ namespace Without_Coach
             label12.Name = "label12";
             label12.Size = new Size(27, 31);
             label12.TabIndex = 32;
-            label12.Text = "4";
+            label12.Text = "3";
             // 
             // label11
             // 
@@ -562,7 +519,7 @@ namespace Without_Coach
             label11.Name = "label11";
             label11.Size = new Size(27, 31);
             label11.TabIndex = 31;
-            label11.Text = "4";
+            label11.Text = "3";
             // 
             // label10
             // 
@@ -586,8 +543,7 @@ namespace Without_Coach
             label9.Name = "label9";
             label9.Size = new Size(27, 31);
             label9.TabIndex = 29;
-            label9.Text = "4";
-            label9.Click += label9_Click;
+            label9.Text = "3";
             // 
             // label8
             // 
@@ -611,8 +567,7 @@ namespace Without_Coach
             label7.Name = "label7";
             label7.Size = new Size(27, 31);
             label7.TabIndex = 27;
-            label7.Text = "4";
-            label7.Click += label7_Click;
+            label7.Text = "3";
             // 
             // label22
             // 
@@ -636,7 +591,7 @@ namespace Without_Coach
             label3.Name = "label3";
             label3.Size = new Size(27, 31);
             label3.TabIndex = 25;
-            label3.Text = "4";
+            label3.Text = "3";
             // 
             // label2
             // 
@@ -660,8 +615,7 @@ namespace Without_Coach
             label1.Name = "label1";
             label1.Size = new Size(27, 31);
             label1.TabIndex = 23;
-            label1.Text = "4";
-            label1.Click += label1_Click;
+            label1.Text = "3";
             // 
             // comboBox15
             // 
@@ -857,192 +811,36 @@ namespace Without_Coach
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
-            // comboBox1
-            // 
-            comboBox1.BackColor = Color.LightGray;
-            comboBox1.Cursor = Cursors.Hand;
-            comboBox1.FlatStyle = FlatStyle.System;
-            comboBox1.Font = new Font("Segoe UI", 14F);
-            comboBox1.ForeColor = Color.Black;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox1.Location = new Point(268, 420);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(179, 39);
-            comboBox1.TabIndex = 16;
-            // 
-            // comboBox2
-            // 
-            comboBox2.BackColor = Color.LightGray;
-            comboBox2.Cursor = Cursors.Hand;
-            comboBox2.FlatStyle = FlatStyle.System;
-            comboBox2.Font = new Font("Segoe UI", 12F);
-            comboBox2.ForeColor = Color.Black;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox2.Location = new Point(268, 384);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(179, 36);
-            comboBox2.TabIndex = 15;
-            // 
-            // comboBox3
-            // 
-            comboBox3.BackColor = Color.LightGray;
-            comboBox3.Cursor = Cursors.Hand;
-            comboBox3.FlatStyle = FlatStyle.System;
-            comboBox3.Font = new Font("Segoe UI", 12F);
-            comboBox3.ForeColor = Color.Black;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox3.Location = new Point(268, 348);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(179, 36);
-            comboBox3.TabIndex = 14;
-            // 
-            // comboBox13
-            // 
-            comboBox13.BackColor = Color.LightGray;
-            comboBox13.Cursor = Cursors.Hand;
-            comboBox13.FlatStyle = FlatStyle.System;
-            comboBox13.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 178);
-            comboBox13.ForeColor = Color.Black;
-            comboBox13.FormattingEnabled = true;
-            comboBox13.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox13.Location = new Point(362, 73);
-            comboBox13.Name = "comboBox13";
-            comboBox13.Size = new Size(179, 36);
-            comboBox13.TabIndex = 13;
-            // 
-            // comboBox12
-            // 
-            comboBox12.BackColor = Color.LightGray;
-            comboBox12.Cursor = Cursors.Hand;
-            comboBox12.FlatStyle = FlatStyle.System;
-            comboBox12.Font = new Font("Segoe UI", 14F);
-            comboBox12.ForeColor = Color.Black;
-            comboBox12.FormattingEnabled = true;
-            comboBox12.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox12.Location = new Point(268, 531);
-            comboBox12.Name = "comboBox12";
-            comboBox12.Size = new Size(179, 39);
-            comboBox12.TabIndex = 12;
-            // 
-            // comboBox11
-            // 
-            comboBox11.BackColor = Color.LightGray;
-            comboBox11.Cursor = Cursors.Hand;
-            comboBox11.FlatStyle = FlatStyle.System;
-            comboBox11.Font = new Font("Segoe UI", 12F);
-            comboBox11.ForeColor = Color.Black;
-            comboBox11.FormattingEnabled = true;
-            comboBox11.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox11.Location = new Point(268, 495);
-            comboBox11.Name = "comboBox11";
-            comboBox11.Size = new Size(179, 36);
-            comboBox11.TabIndex = 11;
-            // 
-            // comboBox10
-            // 
-            comboBox10.BackColor = Color.LightGray;
-            comboBox10.Cursor = Cursors.Hand;
-            comboBox10.FlatStyle = FlatStyle.System;
-            comboBox10.Font = new Font("Segoe UI", 12F);
-            comboBox10.ForeColor = Color.Black;
-            comboBox10.FormattingEnabled = true;
-            comboBox10.Items.AddRange(new object[] { "tgag", "ajjja", "kajjaj" });
-            comboBox10.Location = new Point(268, 459);
-            comboBox10.Name = "comboBox10";
-            comboBox10.Size = new Size(179, 36);
-            comboBox10.TabIndex = 10;
-            // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
-            // 
-            // Form3
+            // Tables_3_days_mediume_
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1289, 738);
-            Controls.Add(panel2);
+            Controls.Add(panel3);
             Controls.Add(panel1);
-            Name = "Form3";
-            Text = "tables 3 days";
-            Load += Form3_Load;
+            Name = "Tables_3_days_mediume_";
+            Text = "Tables_3_days_mediume_";
+            Load += Tables_3_days_mediume__Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         #endregion
 
         private Panel panel1;
-        private Label label6;
         private Label label5;
+        private Label label6;
         private PictureBox pictureBox1;
-        private Panel panel2;
-        private PictureBox pictureBox2;
-        private ContextMenuStrip contextMenuStrip1;
-        private ComboBox comboBox10;
-        private ComboBox comboBox11;
-        private ComboBox comboBox12;
         private Panel panel3;
-        private Label label1;
-        private ComboBox comboBox15;
-        private ComboBox comboBox16;
-        private ComboBox comboBox17;
-        private ComboBox comboBox18;
-        private ComboBox comboBox19;
-        private ComboBox comboBox20;
-        private ComboBox comboBox4;
-        private ComboBox comboBox5;
-        private ComboBox comboBox6;
-        private ComboBox comboBox8;
-        private ComboBox comboBox9;
-        private ComboBox comboBox14;
-        private PictureBox pictureBox3;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private ComboBox comboBox3;
-        private ComboBox comboBox13;
-        private Label label22;
-        private Label label3;
-        private Label label2;
-        private Label label23;
-        private Label label4;
-        private Label label12;
-        private Label label11;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox9;
-        private TextBox textBox8;
-        private TextBox textBox7;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
+        private LinkLabel linkLabel4;
+        private LinkLabel linkLabel3;
+        private LinkLabel linkLabel2;
+        private LinkLabel linkLabel1;
         private TextBox textBox13;
         private TextBox textBox14;
         private TextBox textBox15;
@@ -1058,9 +856,39 @@ namespace Without_Coach
         private TextBox textBox12;
         private TextBox textBox11;
         private TextBox textBox10;
-        private LinkLabel linkLabel1;
-        private LinkLabel linkLabel4;
-        private LinkLabel linkLabel3;
-        private LinkLabel linkLabel2;
+        private TextBox textBox9;
+        private TextBox textBox8;
+        private TextBox textBox7;
+        private TextBox textBox6;
+        private TextBox textBox5;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private Label label23;
+        private Label label4;
+        private Label label12;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Label label7;
+        private Label label22;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private ComboBox comboBox15;
+        private ComboBox comboBox16;
+        private ComboBox comboBox17;
+        private ComboBox comboBox18;
+        private ComboBox comboBox19;
+        private ComboBox comboBox20;
+        private ComboBox comboBox4;
+        private ComboBox comboBox5;
+        private ComboBox comboBox6;
+        private ComboBox comboBox8;
+        private ComboBox comboBox9;
+        private ComboBox comboBox14;
+        private PictureBox pictureBox3;
     }
 }

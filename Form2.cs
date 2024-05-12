@@ -29,7 +29,7 @@ namespace Without_Coach
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == 0)
+            if (comboBox1.SelectedIndex == 0 && comboBox2.SelectedIndex == 2)
             {
                 // Open Form2
                 Form beforeform3 = new before_form3();
@@ -42,9 +42,11 @@ namespace Without_Coach
                 this.Hide();
                 beforeForm4.Show();
             }
-            else if (comboBox2.SelectedIndex == 0 && comboBox1.SelectedIndex == 3)
+            else if (comboBox2.SelectedIndex == 1 && comboBox1.SelectedIndex == 0)
             {
-
+                Form beforebeforemediume_ = new before_mediume_();
+                this.Hide();
+                beforebeforemediume_.Show();
             }
             else
             {
@@ -54,7 +56,6 @@ namespace Without_Coach
 
 
         }
-
         private void comboBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -80,8 +81,9 @@ namespace Without_Coach
         {
             if (e.KeyCode == Keys.Enter)
             {
-                button1.Focus();   
+                button1.Focus();
             }
         }
     }
 }
+
