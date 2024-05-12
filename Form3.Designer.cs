@@ -38,6 +38,9 @@ namespace Without_Coach
             pictureBox2 = new PictureBox();
             panel2 = new Panel();
             panel3 = new Panel();
+            linkLabel4 = new LinkLabel();
+            linkLabel3 = new LinkLabel();
+            linkLabel2 = new LinkLabel();
             linkLabel1 = new LinkLabel();
             textBox13 = new TextBox();
             textBox14 = new TextBox();
@@ -185,6 +188,9 @@ namespace Without_Coach
             // 
             panel3.BackColor = Color.LightGray;
             panel3.BackgroundImageLayout = ImageLayout.Stretch;
+            panel3.Controls.Add(linkLabel4);
+            panel3.Controls.Add(linkLabel3);
+            panel3.Controls.Add(linkLabel2);
             panel3.Controls.Add(linkLabel1);
             panel3.Controls.Add(textBox13);
             panel3.Controls.Add(textBox14);
@@ -242,6 +248,42 @@ namespace Without_Coach
             panel3.RightToLeft = RightToLeft.No;
             panel3.Size = new Size(950, 738);
             panel3.TabIndex = 17;
+            // 
+            // linkLabel4
+            // 
+            linkLabel4.AutoSize = true;
+            linkLabel4.Cursor = Cursors.Hand;
+            linkLabel4.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel4.Location = new Point(724, 182);
+            linkLabel4.Name = "linkLabel4";
+            linkLabel4.Size = new Size(17, 24);
+            linkLabel4.TabIndex = 62;
+            linkLabel4.TabStop = true;
+            linkLabel4.Text = "?";
+            // 
+            // linkLabel3
+            // 
+            linkLabel3.AutoSize = true;
+            linkLabel3.Cursor = Cursors.Hand;
+            linkLabel3.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel3.Location = new Point(724, 145);
+            linkLabel3.Name = "linkLabel3";
+            linkLabel3.Size = new Size(17, 24);
+            linkLabel3.TabIndex = 61;
+            linkLabel3.TabStop = true;
+            linkLabel3.Text = "?";
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Cursor = Cursors.Hand;
+            linkLabel2.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel2.Location = new Point(724, 111);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(17, 24);
+            linkLabel2.TabIndex = 60;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "?";
             // 
             // linkLabel1
             // 
@@ -633,6 +675,7 @@ namespace Without_Coach
             comboBox15.Size = new Size(179, 32);
             comboBox15.TabIndex = 22;
             comboBox15.Text = "Standing Military Press";
+            comboBox15.SelectedIndexChanged += comboBox15_SelectedIndexChanged;
             // 
             // comboBox16
             // 
@@ -642,12 +685,13 @@ namespace Without_Coach
             comboBox16.Font = new Font("Rockwell Condensed", 12F);
             comboBox16.ForeColor = Color.Black;
             comboBox16.FormattingEnabled = true;
-            comboBox16.Items.AddRange(new object[] { "Close-Grip Bench Press" });
+            comboBox16.Items.AddRange(new object[] { "Close-Grip Bench Press", "Incline Push Up" });
             comboBox16.Location = new Point(74, 99);
             comboBox16.Name = "comboBox16";
             comboBox16.Size = new Size(179, 32);
             comboBox16.TabIndex = 21;
             comboBox16.Text = "Close-Grip Bench Press";
+            comboBox16.SelectedIndexChanged += comboBox16_SelectedIndexChanged;
             // 
             // comboBox17
             // 
@@ -657,7 +701,7 @@ namespace Without_Coach
             comboBox17.Font = new Font("Rockwell Condensed", 12F);
             comboBox17.ForeColor = Color.Black;
             comboBox17.FormattingEnabled = true;
-            comboBox17.Items.AddRange(new object[] { "Barbell Bench Press", "Test" });
+            comboBox17.Items.AddRange(new object[] { "Barbell Bench Press", "Push up" });
             comboBox17.Location = new Point(74, 63);
             comboBox17.Name = "comboBox17";
             comboBox17.Size = new Size(179, 32);
@@ -709,6 +753,7 @@ namespace Without_Coach
             comboBox20.Size = new Size(179, 32);
             comboBox20.TabIndex = 17;
             comboBox20.Text = "Dumbbell Lateral Raise";
+            comboBox20.SelectedIndexChanged += comboBox20_SelectedIndexChanged;
             // 
             // comboBox4
             // 
@@ -1012,5 +1057,8 @@ namespace Without_Coach
         private TextBox textBox11;
         private TextBox textBox10;
         private LinkLabel linkLabel1;
+        private LinkLabel linkLabel4;
+        private LinkLabel linkLabel3;
+        private LinkLabel linkLabel2;
     }
 }

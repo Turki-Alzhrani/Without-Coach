@@ -85,5 +85,93 @@ namespace Without_Coach
         {
 
         }
+
+        private void comboBox17_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox17.SelectedIndex == 0)
+            {
+                // Set the link for the first item
+                linkLabel1.Text = "Barbell Bench Press";
+                linkLabel1.Tag = "https://youtube.com/shorts/0cXAp6WhSj4?si=TCF-NA1j5bAwJ4X_"; // Set the URL as the Tag property
+            }
+            else if (comboBox17.SelectedIndex == 1)
+            {
+                // Set the link for the second item
+                linkLabel1.Text = "Push up";
+                linkLabel1.Tag = "https://youtube.com/shorts/yQEx9OC2C3E?si=fkzjZXdPe5cnTIet"; // Set the URL as the Tag property
+            }
+            else
+            {
+                // Clear the link label if no item is selected
+                linkLabel1.Text = "?";
+
+            }
+        }
+
+        private void comboBox16_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        if (comboBox16.SelectedIndex == 0)
+            {
+                // Set the link for the first item
+                linkLabel2.Text = "Close-Grip Bench Press";
+                linkLabel2.Tag = "https://youtube.com/shorts/43rg7fBNP2w?si=dmpxQ0PEV1BEz0PA"; // Set the URL as the Tag property
+            }
+            else if (comboBox17.SelectedIndex == 1)
+            {
+                // Set the link for the second item
+                linkLabel2.Text = "Incline Push Up";
+                linkLabel2.Tag = "https://youtu.be/vuQnqRGy87Q?si=KJPXBFE0hc8VI2YW"; // Set the URL as the Tag property
+            }
+            else
+{
+              // Clear the link label if no item is selected
+                linkLabel2.Text = "?";
+
+}
+            }
+private void comboBox15_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox15.SelectedIndex == 0)
+            {
+                // Set the link for the first item
+                linkLabel3.Text = "Standing Military Press";
+                linkLabel3.Tag = "https://youtube.com/shorts/DN3WXJlB1Q4?si=BVL7nMX6eItC7qyk"; // Set the URL as the Tag property
+            }
+            else if (comboBox15.SelectedIndex == 1)
+            {
+                // Set the link for the second item
+                linkLabel3.Text = "Link 2";
+                linkLabel3.Tag = "https://example.com/link2"; // Set the URL as the Tag property
+            }
+            else
+            {
+                // Clear the link label if no item is selected
+                linkLabel3.Text = "?";
+
+            }
+        }
+
+        private void comboBox20_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox20.SelectedIndex == 0)
+            {
+                // Set the link for the first item
+                linkLabel4.Text = "Dumbbell Lateral Raise";
+                linkLabel4.Tag = "https://youtu.be/vuQnqRGy87Q?si=KJPXBFE0hc8VI2YW"; // Set the URL as the Tag property
+            }
+            else if (comboBox15.SelectedIndex == 1)
+            {
+                // Set the link for the second item
+                linkLabel4.Text = "Link 2";
+                linkLabel4.Tag = "https://example.com/link2"; // Set the URL as the Tag property
+            }
+            else
+            {
+                // Clear the link label if no item is selected
+                linkLabel4.Text = "?";
+
+            }
+        }
     }
 }

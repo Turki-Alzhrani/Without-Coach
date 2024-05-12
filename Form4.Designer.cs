@@ -34,6 +34,10 @@
             label6 = new Label();
             pictureBox1 = new PictureBox();
             panel3 = new Panel();
+            linkLabel4 = new LinkLabel();
+            linkLabel3 = new LinkLabel();
+            linkLabel2 = new LinkLabel();
+            linkLabel1 = new LinkLabel();
             label14 = new Label();
             label15 = new Label();
             label16 = new Label();
@@ -191,6 +195,10 @@
             // 
             panel3.BackColor = Color.LightGray;
             panel3.BackgroundImageLayout = ImageLayout.Stretch;
+            panel3.Controls.Add(linkLabel4);
+            panel3.Controls.Add(linkLabel3);
+            panel3.Controls.Add(linkLabel2);
+            panel3.Controls.Add(linkLabel1);
             panel3.Controls.Add(label14);
             panel3.Controls.Add(label15);
             panel3.Controls.Add(label16);
@@ -295,6 +303,58 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(1247, 1053);
             panel3.TabIndex = 19;
+            // 
+            // linkLabel4
+            // 
+            linkLabel4.AutoSize = true;
+            linkLabel4.Cursor = Cursors.Hand;
+            linkLabel4.Font = new Font("Segoe UI", 10F);
+            linkLabel4.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel4.Location = new Point(715, 179);
+            linkLabel4.Name = "linkLabel4";
+            linkLabel4.Size = new Size(18, 23);
+            linkLabel4.TabIndex = 134;
+            linkLabel4.TabStop = true;
+            linkLabel4.Text = "?";
+            // 
+            // linkLabel3
+            // 
+            linkLabel3.AutoSize = true;
+            linkLabel3.Cursor = Cursors.Hand;
+            linkLabel3.Font = new Font("Segoe UI", 10F);
+            linkLabel3.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel3.Location = new Point(715, 146);
+            linkLabel3.Name = "linkLabel3";
+            linkLabel3.Size = new Size(18, 23);
+            linkLabel3.TabIndex = 133;
+            linkLabel3.TabStop = true;
+            linkLabel3.Text = "?";
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Cursor = Cursors.Hand;
+            linkLabel2.Font = new Font("Segoe UI", 10F);
+            linkLabel2.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel2.Location = new Point(715, 110);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(18, 23);
+            linkLabel2.TabIndex = 132;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "?";
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Cursor = Cursors.Hand;
+            linkLabel1.Font = new Font("Segoe UI", 10F);
+            linkLabel1.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel1.Location = new Point(715, 73);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(18, 23);
+            linkLabel1.TabIndex = 131;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "?";
             // 
             // label14
             // 
@@ -411,7 +471,7 @@
             label26.FlatStyle = FlatStyle.Flat;
             label26.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.World, 0);
             label26.ForeColor = SystemColors.ActiveCaptionText;
-            label26.Location = new Point(311, 704);
+            label26.Location = new Point(311, 710);
             label26.Name = "label26";
             label26.Size = new Size(27, 31);
             label26.TabIndex = 118;
@@ -423,7 +483,7 @@
             label27.FlatStyle = FlatStyle.Flat;
             label27.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.World, 0);
             label27.ForeColor = SystemColors.ActiveCaptionText;
-            label27.Location = new Point(311, 665);
+            label27.Location = new Point(311, 668);
             label27.Name = "label27";
             label27.Size = new Size(27, 31);
             label27.TabIndex = 117;
@@ -1105,7 +1165,7 @@
             label12.FlatStyle = FlatStyle.Flat;
             label12.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.World, 0);
             label12.ForeColor = SystemColors.ActiveCaptionText;
-            label12.Location = new Point(311, 393);
+            label12.Location = new Point(311, 395);
             label12.Name = "label12";
             label12.Size = new Size(27, 31);
             label12.TabIndex = 32;
@@ -1236,6 +1296,7 @@
             comboBox15.Size = new Size(179, 32);
             comboBox15.TabIndex = 22;
             comboBox15.Text = "Standing Military Press";
+            comboBox15.SelectedIndexChanged += comboBox15_SelectedIndexChanged;
             // 
             // comboBox16
             // 
@@ -1251,6 +1312,7 @@
             comboBox16.Size = new Size(179, 32);
             comboBox16.TabIndex = 21;
             comboBox16.Text = "Close-Grip Bench Press";
+            comboBox16.SelectedIndexChanged += comboBox16_SelectedIndexChanged;
             // 
             // comboBox17
             // 
@@ -1266,6 +1328,7 @@
             comboBox17.Size = new Size(179, 32);
             comboBox17.TabIndex = 20;
             comboBox17.Text = "Barbell Bench Press";
+            comboBox17.SelectedIndexChanged += comboBox17_SelectedIndexChanged;
             // 
             // comboBox18
             // 
@@ -1311,6 +1374,7 @@
             comboBox20.Size = new Size(179, 32);
             comboBox20.TabIndex = 17;
             comboBox20.Text = "Dumbbell Lateral Raise ";
+            comboBox20.SelectedIndexChanged += comboBox20_SelectedIndexChanged;
             // 
             // comboBox4
             // 
@@ -1538,5 +1602,9 @@
         private Label label15;
         private Label label14;
         private PictureBox pictureBox2;
+        private LinkLabel linkLabel4;
+        private LinkLabel linkLabel3;
+        private LinkLabel linkLabel2;
+        private LinkLabel linkLabel1;
     }
 }
